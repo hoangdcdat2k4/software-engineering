@@ -1,0 +1,707 @@
+/* Modern Dashboard UI Styling */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container styling */
+.main {
+    background-color: #f9fafb;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Profile section styling */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header {
+    background: linear-gradient(90deg, #f0f7ff 0%, #e6f0ff 100%);
+    padding: 20px;
+    position: relative;
+    height: 150px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-info {
+    padding: 70px 20px 20px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-position {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.profile-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.profile-detail i {
+    margin-right: 10px;
+    color: #6c7ae0;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-content {
+    color: #555;
+}
+
+/* Dashboard stats styling */
+.stat-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.stat-title {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stat-info {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Leave card styling */
+.leave-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.leave-card-green {
+    border-top: 3px solid #4CAF50;
+}
+
+.leave-card-blue {
+    border-top: 3px solid #2196F3;
+}
+
+.leave-card-red {
+    border-top: 3px solid #f44336;
+}
+
+.leave-card-purple {
+    border-top: 3px solid #9c27b0;
+}
+
+.leave-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.leave-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    color: #555;
+}
+
+.leave-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.leave-body {
+    padding: 15px 20px;
+}
+
+.leave-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.leave-label {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.leave-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    color: #333;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.leave-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Task styling */
+.task {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Widget styling */
+.widget {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.widget-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.widget-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.widget-body {
+    padding: 15px 20px;
+}
+
+.widget-footer {
+    padding: 10px 20px;
+    border-top: 1px solid #f5f5f5;
+    text-align: center;
+}
+
+.view-all-btn {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #6c7ae0;
+    text-decoration: none;
+}
+
+.view-all-btn:hover {
+    text-decoration: underline;
+}
+
+/* Request list styling */
+.request-filter {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.filter-label {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.request-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.request-header th {
+    text-align: left;
+    padding: 10px 5px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #666;
+}
+
+.request-item td {
+    padding: 15px 5px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.status-approved {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.status-pending {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #fff8e1;
+    color: #ffa000;
+}
+
+.status-rejected {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+/* Events styling */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-item {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-date {
+    width: 60px;
+    height: 60px;
+    background-color: #f5f7f9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.event-day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.event-month {
+    font-size: 0.7rem;
+    color: #666;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.event-time, .event-location {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+/* Custom Streamlit elements */
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.welcome-banner {
+    background: linear-gradient(90deg, #f0f7ff 0%, #e6f0ff 100%);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.welcome-banner h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.welcome-banner p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Login form styling */
+.login-container {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.login-logo {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.login-logo span {
+    color: #6c7ae0;
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Sidebar styling */
+.sidebar-header {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.sidebar-logo span {
+    color: #6c7ae0;
+}
+
+/* Attendance calendar */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.calendar-day-header {
+    font-weight: 600;
+    color: #888;
+}
+
+.calendar-day.present {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.calendar-day.absent {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+.calendar-day.weekend {
+    background-color: #f5f5f5;
+    color: #bbb;
+}
+
+.calendar-day.today {
+    border: 2px solid #6c7ae0;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background-color: #6c7ae0;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #5a68d5;
+}
+
+.btn-secondary {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #43a047;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #e53935;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #6c7ae0;
+    outline: none;
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 40px;
+    white-space: pre-wrap;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #6c7ae0 !important;
+    color: #fff !important;
+}
+
+/* Sidebar styling */
+.css-1oe6o3n {
+    background-color: #ffffff;
+    border-right: 1px solid #f0f0f0;
+}
+
+.css-1oe6o3n .sidebar-content {
+    padding: 20px;
+}
+
+/* Navigation menu */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #555;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #f5f5f5;
+}
+
+.nav-link.active {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.nav-icon {
+    margin-right: 10px;
+}
+
+/* Make sure streamlit elements use our styling */
+div.stButton > button {
+    background-color: #6c7ae0;
+    color: white;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+div.stButton > button:hover {
+    background-color: #5a68d5;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 122, 224, 0.3);
+}
+
+/* Custom Streamlit components */
+.stTextInput > div > div > input {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #6c7ae0;
+    box-shadow: 0 0 0 1px #6c7ae0;
+}
+
+.stSelectbox > div > div > div {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Override Streamlit header */
+.css-18e3th9 {
+    padding-top: 0;
+}
