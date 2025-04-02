@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Đỗ Tiến Mạnh",
+        "region": 1,
+        "base_salary": 10000000.0,
+        "bonus": 1000000.0,
+        "dependents": 2,
+        "allowance": 1000000.0,
+        "membership_card": "VIP",
+        "insurance": 1050000.0,
+        "tax": 0,
+        "net_salary": 10950000.0
+    },
+    {
+        "id": 2,
+        "name": "Nguyễn Quang Tuyền",
+        "region": 2,
+        "base_salary": 20000000.0,
+        "bonus": 2000000.0,
+        "dependents": 2,
+        "allowance": 2000000.0,
+        "membership_card": "VIP",
+        "insurance": 2100000.0,
+        "tax": 110000.0,
+        "net_salary": 21790000.0
+    }
+]
